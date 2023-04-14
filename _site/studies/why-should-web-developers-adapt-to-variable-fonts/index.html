@@ -10,15 +10,25 @@
     />
 
     <!-- Prefetch-->
-      
+    <link
+      rel="preload"
+      href="./assets/fonts/RobotoFlex-Variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    
+    <link
+      rel="preload"
+      href="./assets/fonts/RobotoFlex-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+   
     <!-- favicon + generator -->
-     
-
-    <!-- schema for blog  -->
-    
-
-    <!-- schema for home -->
-    
+    <link rel="icon" sizes="48x48" href="/favicon.ico" />
+    <link rel="canonical" href="https://digitaldesigners.ca/studies/why-should-web-developers-adapt-to-variable-fonts/" itemprop="url" />
 
     <!-- metadata -->
     <title>Why Should Web Developers Adapt to Variable Fonts?</title>
@@ -39,11 +49,12 @@
 <meta name="twitter:description" content="Innovating the Cloud Space while Embracing Humanity" />
 <meta name="twitter:image" content="socialImage" />
  
+    
+    <!-- styles & scripts -->
+    
+    <script type="module" src="/assets/js/metric.js"></script>
     <link rel="stylesheet" href="/assets/main.css" />
 
-    <!-- verifications -->
-    <meta name="yandex" content="" />
-    <meta name="google" content="" />
     <!-- End of Head -->
   </head>
 
@@ -81,9 +92,9 @@
     Published: <time>March 15, 2023</time>
     <a class="category" href="/studies/Typography">Typography</a>
   </small>
-  <p>Variable fonts are an evolution of the OpenType font specification that enables many different variations of a typeface to be incorporated into a single file, rather than having a separate font file for every width, weight, or style. They let you access all the variations contained in a given font file via CSS and a single @font-face reference.</p>
+  <p>Variable fonts are an evolution of the OpenType font specification that enables many different variations of a typeface to be incorporated into a single file, rather than having a separate font file for every width, weight, or style. They let you access all the variations contained in a given font file via CSS and a single @font-face reference. In the past, a typeface would be produced as several individual fonts, and each font would represent one specific width/weight/style combination.</p>
 <h2>Standard (or Static) fonts</h2>
-<p>In the past, a typeface would be produced as several individual fonts, and each font would represent one specific width/weight/style combination. So you would have separate files for 'Roboto Regular', 'Roboto Bold', and 'Roboto Bold Italic' — meaning that you could end up with 20 or 30 different font files to represent a complete typeface (it could be several times that for a large typeface that has different widths as well).</p>
+<p>So you would have separate files for 'Roboto Regular', 'Roboto Bold', and 'Roboto Bold Italic' — meaning that you could end up with 20 or 30 different font files to represent a complete typeface (it could be several times that for a large typeface that has different widths as well).</p>
 <p>In such a scenario, to use a typeface for typical use on a site for body copy you would need at least four files: regular, italic, bold, and bold italic. If you wanted to add more weights, like a lighter one for captions or a heavier one for extra emphasis, that would mean several more files. This results in more HTTP requests, and more data being downloaded (usually around 20k or more per file).</p>
 <h2>Variable fonts</h2>
 <p>With a variable font, all of those permutations can be contained in a single file. That file would be larger than a single font, but in most cases smaller or about the same size as the 4 you might load for body copy. The advantage in choosing the variable font is that you have access to the entire range of weights, widths, and styles available, rather than being constrained to only the few that you previously would have loaded separately.</p>

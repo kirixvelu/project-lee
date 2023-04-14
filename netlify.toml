@@ -49,6 +49,18 @@ status = 301
 force = true
 
 [[redirects]]
+from = "/publish"
+to = "/studies"
+status = 301
+force = true
+
+[[redirects]]
+from = "/article"
+to = "/studies"
+status = 301
+force = true
+
+[[redirects]]
 from = "/feed"
 to = "/feed.xml"
 status = 301
@@ -78,6 +90,12 @@ to = "/assets/social-image.jpg"
 status = 301
 force = true
 
+[[redirects]]
+from = "/favicon"
+to = "/favicon.ico"
+status = 301
+force = true
+
 # social media 
 [[redirects]]
 from = "/twitter"
@@ -87,19 +105,19 @@ force = true
 
 [[redirects]]
 from = "/instagram"
-to = "https://www.instagram.com/digitaldesignersca/"
+to = "https://instagram.com/digitaldesignersca/"
 status = 301
 force = true
 
 [[redirects]]
 from = "/facebook"
-to = "https://www.facebook.com/digitaldesignersca"
+to = "https://facebook.com/digitaldesignersca"
 status = 301
 force = true
 
 [[redirects]]
 from = "/linkedin"
-to = "https://www.linkedin.com/company/digitaldesignersca"
+to = "https://linkedin.com/company/digitaldesignersca"
 status = 301
 force = true
 
@@ -113,5 +131,5 @@ force = true
 # web analytics
 [[redirects]]
   from = "https://digitaldesigners.ca/g/collect"
-  to = "https://www.google-analytics.com/g/collect"
+  to = "https://google-analytics.com/g/collect"
   status = 200

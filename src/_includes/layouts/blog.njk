@@ -10,9 +10,6 @@
     />
 
     <!-- Prefetch-->
-    {#
-    <link rel="dns-prefetch" href="https://digitaldesigners.ca" />
-    #} {#
     <link
       rel="preload"
       href="./assets/fonts/RobotoFlex-Variable.woff2"
@@ -20,7 +17,7 @@
       type="font/woff2"
       crossorigin
     />
-    #} {#
+    
     <link
       rel="preload"
       href="./assets/fonts/RobotoFlex-Regular.woff"
@@ -28,28 +25,24 @@
       type="font/woff"
       crossorigin
     />
-    #}
+   
     <!-- favicon + generator -->
-    {#
     <link rel="icon" sizes="48x48" href="{{ '/favicon.ico' | url }}" />
-    <link rel="canonical" href="{{ metadata.url + page.url }}" itemprop="url" />
-    #} {#
-    <meta name="generator" content="{{ eleventy.generator }}" />
-    #}
+    <link rel="canonical" href="{{ metadata.url + page.url }}" itemprop="url" />   
 
     <!-- schema for blog  -->
-    {#
+    
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://digitaldesigners.ca/articles"
+          "@id": "https://www.digitaldesigners.ca/studies"
         },
         "headline": "Digital Designers - Web Technology | Innovating the Cloud Space while Embracing Humanity",
         "description": "Digital Designers - Web Technology",
-        "image": "https://digitaldesigners.ca/logo.png",
+        "image": "https://www.digitaldesigners.ca/logo.png",
         "author": {
           "@type": "Organization",
           "name": "Kiri Vadivelu",
@@ -60,25 +53,23 @@
           "name": "Digital Designers",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://digitaldesigners.ca/logo.png"
+            "url": "https://www.digitaldesigners.ca/logo.png"
           }
         },
         "datePublished": "2023-04-05"
       }
     </script>
-    #}
-
+   
     <!-- metadata -->
     <title>{{ title or metadata.title }}</title>
-    {% include "../components/metadata.njk" %} {#
-    <script type="module" src="/assets/js/sprite.js"></script>
-    <script type="module" src="/assets/js/metric.js"></script>
-    #}
-    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
+    {% include "../components/metadata.njk" %} 
 
-    <!-- verifications -->
-    <meta name="yandex" content="" />
-    <meta name="google" content="" />
+    <!-- styles & scripts -->
+    <script type="module" src="/assets/js/metric.js"></script>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
+    {#
+      <script type="module" src="/assets/js/sprite.js"></script>
+      #}
     <!-- End of Head -->
   </head>
 

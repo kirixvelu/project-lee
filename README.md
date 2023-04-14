@@ -1,6 +1,6 @@
 # DIGITAL DESIGNERS
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fdf9f82c-b9a2-4956-8551-14b1f83bb713/deploy-status)](https://app.netlify.com/sites/sprightly-syrniki-48214f/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fdf9f82c-b9a2-4956-8551-14b1f83bb713/deploy-status)](https://app.netlify.com/sites/digitaldesigners/deploys)
 
 - License [MIT](https://kiri-vadivelu.ca/license.txt)
 - Build System [11TY](https://11ty.dev/)

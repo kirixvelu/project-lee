@@ -5,17 +5,13 @@ date: 2022-12-18
 category: "Designs"
 ---
 
-A System Font is a font which is compatible with the respective operating system. What that means is that when a website loads, the font doesn’t have to downloaded by the browser.
+A System Font is a font which is compatible with the respective operating system. What that means is that when a website loads, the font doesn’t have to downloaded by the browser. Apple created the fonts ‘San Francisco’ for desktop and ‘San Francisco Compact’ as the mobile version, announcing these at WWDC 2015. Google also created its own System Font called ‘Roboto’, which was released in 2015. Microsoft already had a default System Font called ‘Segoe UI’, which was released in 2004 – they have continued to work on it since it was launched.
 
 <!-- excerpt -->
 
 ## Who provides system fonts?
 
-Apple created the fonts ‘San Francisco’ for desktop and ‘San Francisco Compact’ as the mobile version, announcing these at WWDC 2015.
-
-Google also created its own System Font called ‘Roboto’, which was released in 2015.
-
-Microsoft already had a default System Font called ‘Segoe UI’, which was released in 2004 – they have continued to work on it since it was launched.
+Apple created the fonts ‘San Francisco’ for desktop and ‘San Francisco Compact’ as the mobile version, announcing these at WWDC 2015. Google also created its own System Font called ‘Roboto’, which was released in 2015. Microsoft already had a default System Font called ‘Segoe UI’, which was released in 2004 – they have continued to work on it since it was launched.
 
 ## How do you choose which font to use?
 

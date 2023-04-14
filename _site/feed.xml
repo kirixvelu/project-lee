@@ -33,7 +33,7 @@ Jamstack is an architectural approach that decouples the web experience layer fr
     <content
       type="html"
       >
-Variable fonts are an evolution of the OpenType font specification that enables many different variations of a typeface to be incorporated into a single file, rather than having a separate font file for every width, weight, or style. They let you access all the variations contained in a given font file via CSS and a single @font-face reference.
+Variable fonts are an evolution of the OpenType font specification that enables many different variations of a typeface to be incorporated into a single file, rather than having a separate font file for every width, weight, or style. They let you access all the variations contained in a given font file via CSS and a single @font-face reference. In the past, a typeface would be produced as several individual fonts, and each font would represent one specific width/weight/style combination.
 
 </content
     >
@@ -117,7 +117,7 @@ Automation testing is a software testing technique that uses special automated t
     <content
       type="html"
       >
-A System Font is a font which is compatible with the respective operating system. What that means is that when a website loads, the font doesn’t have to downloaded by the browser.
+A System Font is a font which is compatible with the respective operating system. What that means is that when a website loads, the font doesn’t have to downloaded by the browser. Apple created the fonts ‘San Francisco’ for desktop and ‘San Francisco Compact’ as the mobile version, announcing these at WWDC 2015. Google also created its own System Font called ‘Roboto’, which was released in 2015. Microsoft already had a default System Font called ‘Segoe UI’, which was released in 2004 – they have continued to work on it since it was launched.
 
 </content
     >
@@ -159,7 +159,7 @@ CSS has always been one of the most important parts of web development, we’ve 
     <content
       type="html"
       >
-Eleventy (also called 11ty) is a simple yet powerful static site generator. It uses JavaScript to transform data and templates into HTML pages.
+Eleventy (also called 11ty) is a simple yet powerful static site generator. It uses JavaScript to transform data and templates into HTML pages. But first — let’s quickly review what is meant by a “static site” and then what a generator provides. A static site is composed of static content — as in, the HTML, CSS, assets, and all content are already compiled together before pushing to a website host. This is different from a dynamic site that compiles those things from querying a database at run time (like WordPress) or that pulls content from APIs client-side (like JavaScript frameworks without server-side rendering).
 
 </content
     >
@@ -229,7 +229,7 @@ JAMstack applications are often built on top of client-side JavaScript, meaning 
     <content
       type="html"
       >
-Netlify and Vercel are serverless deployment platforms for web applications, both designed to allow you to deploy as quickly and easily as possible. Both have very similar feature sets, so which one should you use? 
+Netlify and Vercel are serverless deployment platforms for web applications, both designed to allow you to deploy as quickly and easily as possible. Both have very similar feature sets, so which one should you use? The core feature set of both Netlify and Vercel is the build + Edge stack. Essentially, you trigger a build step either by using Git or uploading manually.
 
 </content
     >
@@ -271,7 +271,7 @@ Open source software is software with source code that anyone can inspect, modif
     <content
       type="html"
       >
-An SEO expert is someone trained to improve your visibility on search engines. By following this guide, you&#39;ll learn enough to be well on your way to an optimized site. In addition to that, you may want to consider hiring an SEO professional that can help you audit your pages.
+An SEO expert is someone trained to improve your visibility on search engines. By following this guide, you&#39;ll learn enough to be well on your way to an optimized site. In addition to that, you may want to consider hiring an SEO professional that can help you audit your pages. Deciding to hire an SEO is a big decision that can potentially improve your site and save time. 
 
 </content
     >

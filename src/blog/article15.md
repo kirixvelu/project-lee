@@ -5,11 +5,11 @@ date: 2022-05-02
 category: "Optimizations"
 ---
 
-An SEO expert is someone trained to improve your visibility on search engines. By following this guide, you'll learn enough to be well on your way to an optimized site. In addition to that, you may want to consider hiring an SEO professional that can help you audit your pages.
+An SEO expert is someone trained to improve your visibility on search engines. By following this guide, you'll learn enough to be well on your way to an optimized site. In addition to that, you may want to consider hiring an SEO professional that can help you audit your pages. Deciding to hire an SEO is a big decision that can potentially improve your site and save time. 
 
 <!-- excerpt -->
 
-Deciding to hire an SEO is a big decision that can potentially improve your site and save time. Make sure to research the potential advantages of hiring an SEO, as well as the damage that an irresponsible SEO can do to your site. Many SEOs and other agencies and consultants provide useful services for website owners, including:
+Make sure to research the potential advantages of hiring an SEO, as well as the damage that an irresponsible SEO can do to your site. Many SEOs and other agencies and consultants provide useful services for website owners, including:
 
 - Review of your site content or structure
 Technical advice on website development: for example, hosting, redirects, error pages, use of JavaScript

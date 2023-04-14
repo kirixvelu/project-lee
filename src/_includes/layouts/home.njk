@@ -10,9 +10,6 @@
     />
 
     <!-- Prefetch-->
-    {#
-    <link rel="dns-prefetch" href="https://digitaldesigners.ca" />
-    #} {#
     <link
       rel="preload"
       href="./assets/fonts/RobotoFlex-Variable.woff2"
@@ -20,7 +17,6 @@
       type="font/woff2"
       crossorigin
     />
-    #} {#
     <link
       rel="preload"
       href="./assets/fonts/RobotoFlex-Regular.woff"
@@ -28,26 +24,20 @@
       type="font/woff"
       crossorigin
     />
-    #}
-
+   
     <!-- favicon + generator -->
-    {#
     <link rel="icon" sizes="48x48" href="{{ '/favicon.ico' | url }}" />
     <link rel="canonical" href="{{ metadata.url + page.url }}" itemprop="url" />
-    #} {#
-    <meta name="generator" content="{{ eleventy.generator }}" />
-    #}
-
+   
     <!-- schema for home -->
-    {#
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Digital Designers",
-        "image": "https://digitaldesigners.ca/logo.png",
+        "image": "www.digitaldesigners.ca/logo.png",
         "@id": "",
-        "url": "https://digitaldesigners.ca",
+        "url": "www.digitaldesigners.ca",
         "telephone": "",
         "priceRange": "$1000 - $10,000",
         "address": {
@@ -90,28 +80,27 @@
           }
         ],
         "sameAs": [
-          "https://www.facebook.com/digitaldesignersca",
+          "https://facebook.com/digitaldesignersca",
           "https://twitter.com/ddesignersca",
-          "https://www.instagram.com/digitaldesignersca/",
-          "https://www.linkedin.com/company/digitaldesignersca/",
+          "https://instagram.com/digitaldesignersca/",
+          "https://linkedin.com/company/digitaldesignersca/",
           "https://github.com/digital-designers",
           "https://digitaldesigners.ca"
         ]
       }
     </script>
-    #}
-
+   
     <!-- metadata -->
     <title>{{ title or metadata.title }}</title>
-    {% include "../components/metadata.njk" %} {#
-    <script type="module" src="/assets/js/sprite.js"></script>
+    {% include "../components/metadata.njk" %} 
+    
+    <!-- styles & scripts -->
     <script type="module" src="/assets/js/metric.js"></script>
-    #}
     <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
-
-    <!-- verifications -->
-    <meta name="yandex" content="" />
-    <meta name="google" content="" />
+    {#
+    <script type="module" src="/assets/js/sprite.js"></script>
+    #}
+  
     <!-- End of Head -->
   </head>
 

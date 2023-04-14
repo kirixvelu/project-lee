@@ -10,9 +10,6 @@
     />
 
     <!-- Prefetch-->
-    {#
-    <link rel="dns-prefetch" href="https://digitaldesigners.ca" />
-    #} {#
     <link
       rel="preload"
       href="./assets/fonts/RobotoFlex-Variable.woff2"
@@ -20,7 +17,7 @@
       type="font/woff2"
       crossorigin
     />
-    #} {#
+    
     <link
       rel="preload"
       href="./assets/fonts/RobotoFlex-Regular.woff"
@@ -28,120 +25,22 @@
       type="font/woff"
       crossorigin
     />
-    #}
+   
     <!-- favicon + generator -->
-    {#
     <link rel="icon" sizes="48x48" href="{{ '/favicon.ico' | url }}" />
     <link rel="canonical" href="{{ metadata.url + page.url }}" itemprop="url" />
-    #} {#
-    <meta name="generator" content="{{ eleventy.generator }}" />
-    #}
-
-    <!-- schema for blog  -->
-    {#
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://digitaldesigners.ca/articles"
-        },
-        "headline": "Digital Designers - Web Technology | Innovating the Cloud Space while Embracing Humanity",
-        "description": "Digital Designers - Web Technology",
-        "image": "https://digitaldesigners.ca/logo.png",
-        "author": {
-          "@type": "Organization",
-          "name": "Kiri Vadivelu",
-          "url": "https://kiri-vadivelu.ca"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Digital Designers",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://digitaldesigners.ca/logo.png"
-          }
-        },
-        "datePublished": "2023-04-05"
-      }
-    </script>
-    #}
-
-    <!-- schema for home -->
-    {#
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Digital Designers",
-        "image": "https://digitaldesigners.ca/logo.png",
-        "@id": "",
-        "url": "https://digitaldesigners.ca",
-        "telephone": "",
-        "priceRange": "$1000 - $10,000",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "945 Midland Avenue",
-          "addressLocality": "Scarborough",
-          "addressRegion": "ON",
-          "postalCode": "M1K 4G5",
-          "addressCountry": "CA"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 43.73703649999999,
-          "longitude": -79.2584632
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Tuesday",
-            "opens": "12:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Wednesday",
-            "opens": "12:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Thursday",
-            "opens": "12:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Friday",
-            "opens": "12:00",
-            "closes": "18:00"
-          }
-        ],
-        "sameAs": [
-          "https://www.facebook.com/digitaldesignersca",
-          "https://twitter.com/ddesignersca",
-          "https://www.instagram.com/digitaldesignersca/",
-          "https://www.linkedin.com/company/digitaldesignersca/",
-          "https://github.com/digital-designers",
-          "https://digitaldesigners.ca"
-        ]
-      }
-    </script>
-    #}
 
     <!-- metadata -->
     <title>{{ title or metadata.title }}</title>
-    {% include "../components/metadata.njk" %} {#
+    {% include "../components/metadata.njk" %} 
+    
+    <!-- styles & scripts -->
+    {#
     <script type="module" src="/assets/js/sprite.js"></script>
-    <script type="module" src="/assets/js/metric.js"></script>
     #}
+    <script type="module" src="/assets/js/metric.js"></script>
     <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
 
-    <!-- verifications -->
-    <meta name="yandex" content="" />
-    <meta name="google" content="" />
     <!-- End of Head -->
   </head>
 

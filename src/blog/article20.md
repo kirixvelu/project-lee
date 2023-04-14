@@ -5,13 +5,13 @@ date: 2022-07-07
 category: "Architecture"
 ---
 
-Netlify and Vercel are serverless deployment platforms for web applications, both designed to allow you to deploy as quickly and easily as possible. Both have very similar feature sets, so which one should you use? 
+Netlify and Vercel are serverless deployment platforms for web applications, both designed to allow you to deploy as quickly and easily as possible. Both have very similar feature sets, so which one should you use? The core feature set of both Netlify and Vercel is the build + Edge stack. Essentially, you trigger a build step either by using Git or uploading manually.
 
 <!-- excerpt -->
 
-**Build + Edge **
+**Build + Edge**
 
-The core feature set of both Netlify and Vercel is the build + Edge stack. Essentially, you trigger a build step either by using Git or uploading manually. Once built, your app is automatically deployed to Netlify or Vercel's Edge Network to ensure a fast UX. This makes it incredibly easy to stepup a static site (e.g. a blog like this one), since all you have to do is push your code. They're fairly equal in this matter, so I wouldn't consider either to be better.
+ Once built, your app is automatically deployed to Netlify or Vercel's Edge Network to ensure a fast UX. This makes it incredibly easy to stepup a static site (e.g. a blog like this one), since all you have to do is push your code. They're fairly equal in this matter, so I wouldn't consider either to be better.
 
 **Serverless Functions**
 

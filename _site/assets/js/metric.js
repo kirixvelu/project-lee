@@ -12,7 +12,7 @@ const lStor = localStorage,
   s = screen,
   nav = navigator || {};
 function a() {
-  const k = "",
+  const k = "G-3X4MXEXKV4",
     t = () => Math.floor(Math.random() * 1e9) + 1,
     n = () => Math.floor(Date.now() / 1e3),
     y = () => (sStor._p || (sStor._p = t()), sStor._p),

@@ -10,15 +10,25 @@
     />
 
     <!-- Prefetch-->
-      
+    <link
+      rel="preload"
+      href="./assets/fonts/RobotoFlex-Variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    
+    <link
+      rel="preload"
+      href="./assets/fonts/RobotoFlex-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+   
     <!-- favicon + generator -->
-     
-
-    <!-- schema for blog  -->
-    
-
-    <!-- schema for home -->
-    
+    <link rel="icon" sizes="48x48" href="/favicon.ico" />
+    <link rel="canonical" href="https://digitaldesigners.ca/studies/what-is-eleventy-static-site-generator-in-a-nutshell/" itemprop="url" />
 
     <!-- metadata -->
     <title>What is Eleventy Static Site Generator in a Nutshell?</title>
@@ -39,11 +49,12 @@
 <meta name="twitter:description" content="Innovating the Cloud Space while Embracing Humanity" />
 <meta name="twitter:image" content="socialImage" />
  
+    
+    <!-- styles & scripts -->
+    
+    <script type="module" src="/assets/js/metric.js"></script>
     <link rel="stylesheet" href="/assets/main.css" />
 
-    <!-- verifications -->
-    <meta name="yandex" content="" />
-    <meta name="google" content="" />
     <!-- End of Head -->
   </head>
 
@@ -81,8 +92,7 @@
     Published: <time>October 10, 2022</time>
     <a class="category" href="/studies/Jamstack">Jamstack</a>
   </small>
-  <p>Eleventy (also called 11ty) is a simple yet powerful static site generator. It uses JavaScript to transform data and templates into HTML pages.</p>
-<p>But first — let’s quickly review what is meant by a “static site” and then what a generator provides. A static site is composed of static content — as in, the HTML, CSS, assets, and all content are already compiled together before pushing to a website host. This is different from a dynamic site that compiles those things from querying a database at run time (like WordPress) or that pulls content from APIs client-side (like JavaScript frameworks without server-side rendering).</p>
+  <p>Eleventy (also called 11ty) is a simple yet powerful static site generator. It uses JavaScript to transform data and templates into HTML pages. But first — let’s quickly review what is meant by a “static site” and then what a generator provides. A static site is composed of static content — as in, the HTML, CSS, assets, and all content are already compiled together before pushing to a website host. This is different from a dynamic site that compiles those things from querying a database at run time (like WordPress) or that pulls content from APIs client-side (like JavaScript frameworks without server-side rendering).</p>
 <p>A static site generator is an environment and build processor to compile your content into static HTML. They usually offer helpers to provide flexibility in writing your content (like supporting Markdown) and include methods for templating. So instead of writing HTML pages one by one and having to copy and paste the repeated parts, a generator will support breaking those things into components via a certain templating language. Then the generator’s build process will bring everything together and output the final HTML that can be uploaded to a web host to be served as your website. Depending on the web host you use, this build process can even be done by the host.</p>
 <p>There are many static site generators available. You may have heard of or even used ones like Jekyll, Hugo, Gatsby, Next and Nuxt. A comprehensive list is provided by Jamstack.org.</p>
 <p>It’s beginner-friendly, has fast build times, and generates fast sites by default. It also has a very active and friendly community.</p>
