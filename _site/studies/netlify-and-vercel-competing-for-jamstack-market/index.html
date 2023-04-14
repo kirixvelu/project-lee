@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- start of Head -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <!-- Prefetch-->
+    <link
+      rel="preload"
+      href="./assets/fonts/RobotoFlex-Variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    
+    <link
+      rel="preload"
+      href="./assets/fonts/RobotoFlex-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+   
+    <!-- favicon + generator -->
+    <link rel="icon" sizes="48x48" href="/favicon.ico" />
+    <link rel="canonical" href="https://digitaldesigners.ca/studies/netlify-and-vercel-competing-for-jamstack-market/" itemprop="url" />
+
+    <!-- metadata -->
+    <title>Netlify &amp; Vercel Competing for Jamstack Market</title>
+     
+
+<meta name="description" content="Innovating the Cloud Space while Embracing Humanity" />
+<meta name="author" content="Kiri Vadivelu" />
+
+<meta property="og:title" content="Digital Designers - Web Technology" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="" />
+<meta property="og:description" content="Innovating the Cloud Space while Embracing Humanity" />
+<meta property="og:image" content="https://digitaldesigners.ca/assets/social-image.jpg" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@kiri_vadivelu" />
+<meta name="twitter:title" content="Digital Designers - Web Technology" />
+<meta name="twitter:description" content="Innovating the Cloud Space while Embracing Humanity" />
+<meta name="twitter:image" content="socialImage" />
+ 
+    
+    <!-- styles & scripts -->
+    
+    <script type="module" src="/assets/js/metric.js"></script>
+    <link rel="stylesheet" href="/assets/main.css" />
+
+    <!-- End of Head -->
+  </head>
+
+  <body>
+    
+<header role="banner">
+  <!-- wrapper -->
+  <div class="header">
+    <div class="logo">
+      <span class="text-body-tall">Digital Designers</span>
+    </div>
+    <!-- spaced between -->
+    <nav role="navigation" aria-label="main navigation">
+      <ul>
+        <li class="nav__item">
+          <a href="/">home</a>
+        </li>
+        <li class="nav__item">
+          <a href="/about/">about</a>
+        </li>
+        <li class="nav__item">
+          <a href="/studies/">studies</a>
+        </li></ul>
+    </nav>
+  </div>
+</header>
+
+    <main role="main">
+      <!-- wrapper -->
+      <div class="main">
+        
+<article class="article">
+  <h1>Netlify &amp; Vercel Competing for Jamstack Market</h1>
+  <small>
+    Published: <time>July 7, 2022</time>
+    <a class="category" href="/studies/Architecture">Architecture</a>
+  </small>
+  <p>Netlify and Vercel are serverless deployment platforms for web applications, both designed to allow you to deploy as quickly and easily as possible. Both have very similar feature sets, so which one should you use? The core feature set of both Netlify and Vercel is the build + Edge stack. Essentially, you trigger a build step either by using Git or uploading manually.</p>
+<p><strong>Build + Edge</strong></p>
+<p>Once built, your app is automatically deployed to Netlify or Vercel's Edge Network to ensure a fast UX. This makes it incredibly easy to stepup a static site (e.g. a blog like this one), since all you have to do is push your code. They're fairly equal in this matter, so I wouldn't consider either to be better.</p>
+<p><strong>Serverless Functions</strong></p>
+<p>Static sites are all well and good, but most applications need a backend to function. For this purpose, both Netlify and Vercel offer serverless functions via AWS Lambda.</p>
+<p><strong>Netlify</strong></p>
+<p>For Netlify, you create a functions directory in your project folder. You can then add AWS Lambda handlers in JavaScript or Go. Routing is handled based on the directory structure. You can read more at the official documentation here.</p>
+<p><strong>Vercel</strong></p>
+<p>Vercel has a very similar interface, using an api directory in your project, but it pulls out ahead in the features department with its support for Python and Ruby as well as JavaScript and Go, and it also supports a custom Express.js-like (req, res) =&gt; {...} format for JavaScript functions, as well as optional Edge caching for responses.</p>
+<p><strong>Server Side Rendering</strong></p>
+<p>Server-Side rendering, or SSR, is a huge win for Vercel, as it's just not really feasible with Netlify. On Vercel, you can deploy a server-side rendered Next.js application within minutes.</p>
+<p><strong>Authentication</strong></p>
+<p>Netlify has a built-in authentication platform based on the GoTrue API which you can easily setup. With Vercel, you'll have to setup authentication some other way.</p>
+<p><strong>Backend for Static Sites</strong></p>
+<p>Netlify provides three features which make it trivially easy to add common functionality to your site:</p>
+<p>Netlify Forms: Manage forms and submissions without setting up any backend</p>
+<p>Netlify Analytics (Paid): Server-side analytics you can setup with no client-side code whatsoever</p>
+<p>Split Testing: Netlify allows you to easily A/B test two deployments</p>
+<p><strong>Pricing</strong>
+Both Netlify and Vercel have generous free plans. You can see the full pricing info here, here, and here, but here's a quick comparison:</p>
+<p><strong>Build</strong>
+Vercel is ahead here, with a soft limit of 100 build hours / month for free and 400 with the Pro plan ($20/month per member) compared to Netlify's 300 build minutes / month free and then $7/500 minutes. Most projects won't need anywhere near this much time anyway, so it probably won't matter for you.</p>
+<p><strong>Edge</strong>
+Both Netlify and Vercel give you 100GB of bandwidth free (although that's a soft limit for Vercel). Netlify sells additional bandwidth at $20/100 and Vercel gives you 1 TB with the Pro plan (also a soft limit).</p>
+<p><strong>Serverless Functions</strong>
+Netlify bills based on the number of invocations, whereas Vercel bills based on GB-hours since you can customize your serveless function instances. Netlify gives you 125k invocations free, and then charges &quot;$25+ when exceeded&quot; (your guess is as good as mine). Vercel gives you 100GB-hours free, and 1000GB-hours with the Pro plan.</p>
+<p><strong>Netlify Forms, Identity, and Analytics</strong>
+Forms get 100 free submissions, then cost &quot;$19+ when exceeded.&quot; Identity gives you 1000 free monthly active users, then charges $99 when exceeded. Analytics costs a flat rate of $9/month.</p>
+<p>We can see a clear divergence of interests between Netlify and Vercel, two extremely similar products at first glance. Netlify is focused on making it easy to create client-side, static applications, and delivers on that goal wonderfully. Vercel, on the other hand, focuses on making back-end work simple. If you're creating a static site, Netlify is the clear choice, but if you need more server-side functionality and you don't mind spending a little time, Vercel is the way to go.</p>
+
+</article>
+      </div>
+    </main>
+    <footer role="contentinfo">
+  <!-- wrapper -->
+  <div class="footer">
+    <span>© 2008-2023. All Rights Reserved.</span>
+    <!-- spaced between -->
+    <span>
+      Made in <a href="https://www.toronto.ca/"><strong> Toronto</strong></a>. Project by
+      <strong
+        ><a href="https://digitaldesigners.ca">Digital Designers</a></strong
+      >
+    </span>
+  </div>
+</footer>
+
+  </body>
+</html>
