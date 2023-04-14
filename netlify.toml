@@ -118,6 +118,6 @@ force = true
 
 # web analytics
 [[redirects]]
-  from = "https://digitaldesigners.ca/g/collect"
+  from = "/g/collect"
   to = "https://google-analytics.com/g/collect"
   status = 200
