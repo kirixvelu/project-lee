@@ -2,12 +2,7 @@ module.exports = {
   name: "Digital Designers",
   title: "Digital Designers - Web Technology",
   description: "Innovating the Cloud Space while Embracing Humanity",
-  keywords: [
-    "Digital Designers",
-    "Tech Community",
-    "Jamstack Development",
-    "Cloud Technology",
-  ],
+  keywords: ["Digital Designers", "Jaffna CSS", "Jamstack", "Netlify", "11TY"],
   url: "https://digitaldesigners.ca",
   language: "en",
   image: "/assets/social-image.jpg",

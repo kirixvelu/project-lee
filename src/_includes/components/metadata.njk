@@ -2,16 +2,24 @@
 "Digital Designers - Web Technology" %}
 
 <meta name="description" content="{{ metadata.description }}" />
-<meta name="author" content="{{ metadata.author.name }}" />
+<meta name="publisher" content="{{ metadata.publisher.name }}" />
+<meta name="keywords" content="{{ metadata.keywords }}" />
+<meta name="geo.placename" content="{{ metadata.city }}" />
+<meta name="geo.region" content="{{ metadata.country }}" />
 
-<meta property="og:title" content="{{ title }}" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="" />
-<meta property="og:description" content="{{ metadata.description }}" />
+
+<meta property="og:title" content="{{ title or metadata.title }}" />
+<meta property="og:type" content="{{ metadata.type }}" />
+<meta property="og:locale" content="{{ metadata.local }}" />
+<meta property="og:site_name" content="{{ metadata.name }}" />
+<meta property="og:url" content="{{ metadata.url + page.url }}" />
+<meta
+  property="og:description"
+  content="{{ description or metadata.description }}" />
 <meta property="og:image" content="{{ socialImage }}" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@kiri_vadivelu" />
-<meta name="twitter:title" content="{{ title }}" />
-<meta name="twitter:description" content="{{ metadata.description }}" />
+<meta name="twitter:site" content="@ddesignersca" />
+<meta name="twitter:title" content="{{ title or metadata.title }}" />
+<meta name="twitter:description" content="{{ description or metadata.description }}" />
 <meta name="twitter:image" content="socialImage" />
