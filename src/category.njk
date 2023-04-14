@@ -1,0 +1,17 @@
+---
+layout: page
+pagination:
+  data: collections.categoryList
+  size: 1
+  alias: cat
+permalink: "/studies/{{ cat.key }}/"
+eleventyComputed:
+  title: Studies of {{ cat.name }}
+---
+<article>
+<h1>{{ title }}</h1>
+
+{% include "./_includes/components/categoryNav.njk" %} {% set articles =
+collections.categorizedPosts[cat.key] | reverse %} {% include
+"./_includes/components/articleList.njk" %}
+</article>

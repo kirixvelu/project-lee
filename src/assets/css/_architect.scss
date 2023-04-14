@@ -1,0 +1,144 @@
+// Site Structure
+// header
+.logo {
+  font-weight: 400;
+  font-stretch: 100%;
+  font-family: var(--font-body);
+  font-variation-settings: var(--options-body-tall);
+}
+
+nav ul {
+  display: inline-flex; // safari
+  gap: var(--spacing-full);
+}
+
+nav ul li {
+  font-variation-settings: var(--options-body-bold);
+
+  &.active a {
+    font-weight: 700;
+    font-stretch: 100%;
+    font-variation-settings: var(--options-body-bold);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 250ms;
+  }
+}
+
+.header {
+  .active a {
+    text-decoration-line: underline overline;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 0.125em;
+  }
+}
+
+main {
+  nav {
+    margin-block: var(--spacing-full);
+    padding-inline: 0.25em;
+    overflow-x: scroll;
+    border-block: 2px solid;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    ul {
+      margin-block: var(--spacing);
+    }
+  }
+}
+// organizing & styling
+.icon-mail {
+  font-size: var(--step-3);
+  a {
+    text-decoration: none;
+    font-size: var(--step-3);
+
+    &:hover {
+      color: var(--theme-clr);
+    }
+  }
+}
+
+.icon-about {
+  color: var(--theme-clr);
+  font-size: var(--step-7);
+  line-height: 1.5;
+}
+
+// articles
+article {
+  .category {
+    display: inline-block;
+    font-weight: 700;
+    font-stretch: 125%;
+    font-variation-settings: var(--options-wide);
+    text-decoration: none;
+    margin-left: 1rem;
+    line-height: 1;
+    padding-inline: var(--em);
+    border-inline: 0.125em solid;
+
+    &:hover {
+      color: var(--link-clr-hover);
+      transition: color 250ms ease-in;
+    }
+    .image {
+      display: block;
+      margin-inline: auto;
+      margin-block: var(--spacing-half);
+    }
+  }
+
+  small {
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+}
+
+article {
+  max-width: 75ch;
+  margin-inline: auto;
+  margin-block: var(--spacing-full);
+}
+
+p {
+  + * {
+    margin-top: 1em;
+  }
+  max-width: 75ch;
+  margin-inline: auto;
+}
+
+.article__item {
+  + .article__item {
+    margin-top: 1em;
+  }
+}
+
+.article__preview {
+  margin-bottom: 0.25em;
+  small {
+    margin-block: 0.5em;
+  }
+}
+
+// footer
+.footer {
+  border-top: 1px solid;
+  padding-top: 0.125em;
+  padding-bottom: 0.5em;
+
+  span {
+    font-size: var(--step--1);
+    break-inside: avoid;
+  }
+}

@@ -1,0 +1,102 @@
+// structure
+html {
+  color: var(--text-clr);
+  background-color: var(--background-clr);
+  scroll-padding-top: 2rem; // below navigation
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; // no horizontal scroll
+  min-height: 98vh;
+  min-width: 320px;
+}
+
+// Keep footer at bottom
+footer {
+  margin-top: auto;
+}
+
+header,
+footer {
+  padding-inline: 1rem;
+}
+
+header {
+  padding-block: 1rem;
+}
+
+main,
+section {
+  display: flex;
+  flex: 0 1 100%;
+  padding-bottom: 2rem;
+  padding-inline: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; // required for visual elements
+}
+
+// internal wrappers
+.main,
+.section,
+.header,
+.footer {
+  width: min(100%, 1280px);
+  margin-inline: auto;
+  // content box - capped, centered & padded at 1280px
+}
+
+// internal positions
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main--padded,
+.section--padded {
+  padding-block: var(--padding-double);
+  // For positioning, coloring & graphics up to 150px height
+}
+
+// block element
+hr {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+// no styles
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+img,
+picture {
+  display: block;
+  margin-inline: auto;
+  margin-block: 0.25em;
+}
+
+audio,
+video,
+embed,
+object {
+  width: 100%;
+  display: block;
+}
+
+audio {
+  border: 2px solid; // audio wrapper style
+  border-radius: 1em;
+}
+
+iframe {
+  border: 1px solid black;
+  width: 100%; /* takes precedence over the width set with the HTML width attribute */
+}

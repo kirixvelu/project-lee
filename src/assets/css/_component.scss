@@ -1,0 +1,144 @@
+// Blockquote
+blockquote p {
+  padding: var(--padding-1);
+  border-radius: var(--radius-1);
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+
+// Accordion
+// Each detail inside detail
+details {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.75em 1em;
+  margin-bottom: 0.5em;
+  border: var(--b-width) solid;
+  border-radius: var(--b-radius);
+  overflow: hidden;
+  position: relative;
+}
+
+// Title wrapped inside summary
+// Detail text list below summary
+summary {
+  display: list-item;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  color: var(--theme);
+}
+
+details summary::before,
+details summary::after,
+details[open] summary::before,
+details[open] summary::after {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  color: var(--muted);
+}
+
+details[open] summary {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid;
+}
+
+details summary::before {
+  content: "open";
+}
+
+details summary::after,
+details[open] summary::after {
+  content: " ";
+}
+
+details[open] summary::before {
+  content: "close";
+}
+
+// Table
+table {
+  border-collapse: collapse;
+  overflow-x: auto;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0.5em 0.75em;
+}
+
+th {
+  text-align: left;
+  color: var(--theme-dark);
+}
+
+td {
+  border-bottom: 1px solid;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0.5em;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+tr th {
+  border-bottom: 2px solid;
+}
+
+// Dialog
+dialog {
+  background-color: var(--background);
+  color: var(--text);
+  border: none;
+  border-radius: var(--radius);
+  border-color: var(--theme);
+  padding: var(--spacing);
+}
+
+dialog::backdrop {
+  background: var(--theme);
+  backdrop-filter: blur(0.15em);
+  -webkit-backdrop-filter: blur(0.15em);
+  transition: backdrop-filter 250ms ease-in-out;
+}
+
+::selection {
+  background-color: var(--hover);
+  color: var(--text);
+}
+
+// horizontal scroll snapper
+// li directly inside ul
+.scroll-snap {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 0 1em;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-snap > * {
+  width: min(30ch, 60vw);
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  padding: var(--spacing);
+  border-bottom: var(--b-radius) solid var(--theme);
+  border-radius: var(--b-radius);
+}

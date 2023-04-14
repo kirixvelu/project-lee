@@ -1,0 +1,12 @@
+{
+  "title": "Digital Designers - Web Technology",
+  "url": "https://digitaldesigners.ca",
+  "language": "en",
+  "description": "Innovating the Cloud Space while Embracing Humanity",
+  "author": {
+    "name": "Kiri Vadivelu",
+    "email": "hello@digitaldesigners.ca"
+  },
+  "image": "/assets/social-image.jpg",
+  "feedUrl": "https://digitaldesigners.ca/feed.xml"
+}

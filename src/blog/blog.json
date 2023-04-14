@@ -1,0 +1,4 @@
+{
+  "layout": "article",
+  "permalink": "/studies/{{ title | slugify }}/"
+}

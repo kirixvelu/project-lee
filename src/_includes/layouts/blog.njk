@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.language }}">
+  <head>
+    <!-- start of Head -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <!-- Prefetch-->
+    {#
+    <link rel="dns-prefetch" href="https://digitaldesigners.ca" />
+    #} {#
+    <link
+      rel="preload"
+      href="./assets/fonts/RobotoFlex-Variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    #} {#
+    <link
+      rel="preload"
+      href="./assets/fonts/RobotoFlex-Regular.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+    #}
+    <!-- favicon + generator -->
+    {#
+    <link rel="icon" sizes="48x48" href="{{ '/favicon.ico' | url }}" />
+    <link rel="canonical" href="{{ metadata.url + page.url }}" itemprop="url" />
+    #} {#
+    <meta name="generator" content="{{ eleventy.generator }}" />
+    #}
+
+    <!-- schema for blog  -->
+    {#
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://digitaldesigners.ca/articles"
+        },
+        "headline": "Digital Designers - Web Technology | Innovating the Cloud Space while Embracing Humanity",
+        "description": "Digital Designers - Web Technology",
+        "image": "https://digitaldesigners.ca/logo.png",
+        "author": {
+          "@type": "Organization",
+          "name": "Kiri Vadivelu",
+          "url": "https://kiri-vadivelu.ca"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Digital Designers",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://digitaldesigners.ca/logo.png"
+          }
+        },
+        "datePublished": "2023-04-05"
+      }
+    </script>
+    #}
+
+    <!-- metadata -->
+    <title>{{ title or metadata.title }}</title>
+    {% include "../components/metadata.njk" %} {#
+    <script type="module" src="/assets/js/sprite.js"></script>
+    <script type="module" src="/assets/js/metric.js"></script>
+    #}
+    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
+
+    <!-- verifications -->
+    <meta name="yandex" content="" />
+    <meta name="google" content="" />
+    <!-- End of Head -->
+  </head>
+
+  <body>
+    {% include "../components/header.njk" %}
+    <main role="main">
+      <!-- wrapper -->
+      <div class="main">
+        {{ content | safe }}
+      </div>
+    </main>
+    {% include "../components/footer.njk" %}
+  </body>
+</html>

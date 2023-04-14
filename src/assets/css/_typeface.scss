@@ -1,0 +1,168 @@
+// Typeface family
+html {
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  font-variation-settings: var(--options-base); // theme.scss
+  //font optimization
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  // font defaults
+  font-weight: normal; //400
+  font-stretch: normal; //100%
+  font-synthesis: none; // no browser styling
+  font-optical-sizing: auto; // variable fonts default
+  text-rendering: optimizeSpeed;
+  font-variation-settings: var(--options-body); // settings theme.scss
+  transition: font-variation-settings 250ms;
+}
+
+// Titles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin-bottom: var(--em);
+  word-break: break-word;
+  font-family: var(--font-heading);
+}
+
+// Classes (span/p)
+.text-title,
+.text-subtitle,
+.text-heading,
+.text-subheading,
+.text-label,
+.text-caption,
+.text-hero {
+  display: block;
+  line-height: 1;
+  font-family: var(--font-heading);
+}
+
+// center text
+.text-center {
+  text-align: center;
+}
+
+// Tiny Text
+small {
+  font-size: var(--step--1);
+}
+
+// Page Title h1
+.text-title,
+h1 {
+  font-weight: 200;
+  font-stretch: 75%;
+  font-size: var(--step-2);
+  margin-bottom: 0.25em;
+  font-variation-settings: var(--options-body-mono);
+}
+// Section Title
+.text-subtitle {
+  font-weight: 450;
+  font-stretch: 75%;
+  font-size: var(--step-1);
+  font-variation-settings: var(--options-heading);
+}
+// Content Heading h3
+.text-heading,
+h2 {
+  font-weight: 400;
+  font-stretch: 100%;
+  font-size: var(--step-1);
+  font-variation-settings: var(--options-heading);
+}
+// Item Heading h4
+.text-subheading {
+  font-weight: 700;
+  font-stretch: 75%;
+  font-size: var(--step-0);
+  font-variation-settings: var(--options-heading-bold);
+}
+
+// Bold Label h5
+.text-label {
+  font-weight: 200;
+  font-stretch: 75%;
+  font-size: var(--step-0);
+  font-variation-settings: var(--options-heading-tall);
+}
+// Capital Caption h6
+.text-caption {
+  color: var(--theme-clr);
+  font-weight: 700;
+  font-stretch: 125%;
+  font-size: var(--step-0);
+  text-transform: uppercase;
+  padding-block: var(--spacing);
+  font-variation-settings: var(--options-heading-wide);
+}
+
+// Body Text
+.text-body {
+  font-weight: 400;
+  font-stretch: 100%;
+  font-size: var(--step-0);
+  font-variation-settings: var(--options-body);
+}
+
+.text-body-tall {
+  font-weight: 400;
+  font-stretch: 75%;
+  font-size: var(--step-0);
+  font-variation-settings: var(--options-body-tall);
+}
+
+// use strong tag to bold body text
+strong,
+dfn,
+var,
+dt {
+  font-weight: 650; // HTML importance
+  font-variation-settings: var(--options-body-bold);
+}
+
+// use inside p or span
+em {
+  font-variation-settings: var(--options-body-slant);
+}
+
+q {
+  padding-block: var(--padding-half); // attention to quote
+}
+
+hgroup {
+  border-bottom: 1px solid; // contain heading and subheading
+}
+
+dl {
+  // contain description list
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding-block: var(--padding-half);
+}
+
+dd {
+  margin-bottom: 0.5em; // description
+}
+
+// .text-hero {
+//   line-height: 1;
+//   font-weight: 1000;
+//   font-stretch: 75%;
+//   font-size: var(--step-7);
+//   background: linear-gradient(to right, var(--theme-light), var(--theme-dark));
+//   background-clip: text;
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   // -webkit-text-stroke-width: 2px;
+//   // -webkit-text-stroke-color: black;
+//   font-variation-settings: var(--options-bold);
+// }

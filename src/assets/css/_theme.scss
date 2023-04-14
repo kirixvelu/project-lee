@@ -1,0 +1,209 @@
+// Variables (Fonts, Options, Colors, Sizing & Spacing)
+// variant font
+@font-face {
+  font-family: "RobotoFlex-Variable";
+  src: local("RobotoFlex-Variable"),
+    url("./fonts/RobotoFlex-Variable.woff2") format("woff2-variations"),
+    url("./fonts/RobotoFlex-Variable.woff2") format("woff2");
+  // deprecated, required by Safari
+  font-style: normal;
+  font-weight: 100 1000; /* prevents faux bolding in Safari */
+  font-stretch: 25% 150%; /* required by Chrome */
+  font-display: fallback;
+}
+
+/* regular font */
+@font-face {
+  font-family: "RobotoFlex-Regular";
+  src: local("RobotoFlex-Regular"),
+    url("./fonts/RobotoFlex-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: fallback; /* method of loading font */
+}
+
+/* fallback font */
+// system-ui
+
+// Theme
+:root {
+  // font family (variant, regular, system)
+  --font-body: "RobotoFlex-Variable", "RobotoFlex-Regular", system-ui,
+    sans-serif;
+  --font-heading: "RobotoFlex-Variable", "RobotoFlex-Regular", system-ui, serif;
+  --font-base: system-ui, sans-serif; //fallback
+
+  // font size (320-1280 @1.333, -1 to 9)
+  // small
+  --step--1: clamp(0.75rem, calc(0.63rem + 0.63vw), 1.13rem);
+  // body
+  --step-0: clamp(1rem, calc(0.83rem + 0.83vw), 1.5rem);
+  // headings
+  --step-1: clamp(1.33rem, calc(1.11rem + 1.11vw), 2rem);
+  --step-2: clamp(1.78rem, calc(1.48rem + 1.48vw), 2.67rem);
+  --step-3: clamp(2.37rem, calc(1.97rem + 1.97vw), 3.55rem);
+  --step-4: clamp(3.16rem, calc(2.63rem + 2.63vw), 4.74rem);
+  --step-5: clamp(4.21rem, calc(3.51rem + 3.51vw), 6.31rem);
+  --step-6: clamp(5.61rem, calc(4.67rem + 4.68vw), 8.42rem);
+  --step-7: clamp(7.48rem, calc(6.23rem + 6.23vw), 11.22rem);
+  --step-8: clamp(9.97rem, calc(8.31rem + 8.31vw), 14.95rem);
+  --step-9: clamp(13.29rem, calc(11.07rem + 11.07vw), 19.93rem);
+
+  // variable settings
+  --options-base: "wght" 400, "wdth" 100, "opsz" 14, "GRAD" 0, "XTRA" 468,
+    "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738,
+    "XOPQ" 96, "slnt" 0;
+
+  // body font
+  --options-body: "wght" 400, "wdth" 100, "opsz" 14, "GRAD" 0, "XTRA" 500,
+    "YOPQ" 79, "YTLC" 475, "YTUC" 712, "YTAS" 800, "YTDE" -150, "YTFI" 650,
+    "XOPQ" 96, "slnt" 0;
+
+  --options-body-tall: "wght" 400, "wdth" 75, "opsz" 14, "GRAD" 0, "XTRA" 323,
+    "YOPQ" 135, "YTLC" 570, "YTUC" 712, "YTAS" 800, "YTDE" -150, "YTFI" 650,
+    "XOPQ" 96, "slnt" 0;
+
+  // body variations
+  --options-body-mono: "wght" 200, "wdth" 75, "opsz" 14, "GRAD" -100, "XTRA" 500,
+    "YOPQ" 100, "YTLC" 475, "YTUC" 712, "YTAS" 800, "YTDE" -150, "YTFI" 650,
+    "XOPQ" 96, "slnt" 0;
+
+  --options-body-bold: "wght" 650, "wdth" 100, "opsz" 14, "GRAD" 0, "XTRA" 500,
+    "YOPQ" 79, "YTLC" 475, "YTUC" 712, "YTAS" 800, "YTDE" -150, "YTFI" 650,
+    "XOPQ" 96, "slnt" 0;
+
+  --options-body-slant: "wght" 400, "wdth" 100, "opsz" 14, "GRAD" 0, "XTRA" 500,
+    "YOPQ" 79, "YTLC" 475, "YTUC" 712, "YTAS" 800, "YTDE" -150, "YTFI" 650,
+    "XOPQ" 96, "slnt" -10;
+
+  // heading font
+  --options-heading: "wght" 450, "wdth" 75, "opsz" 14, "GRAD" 0, "XTRA" 500,
+    "YOPQ" 25, "YTLC" 475, "YTUC" 712, "YTAS" 800, "YTDE" -150, "YTFI" 650,
+    "XOPQ" 96, "slnt" 0;
+
+  // heading variations
+  --options-heading-bold: "wght" 1000, "wdth" 75, "opsz" 14, "GRAD" 0,
+    "XTRA" 500, "YOPQ" 25, "YTLC" 475, "YTUC" 712, "YTAS" 800, "YTDE" -150,
+    "YTFI" 650, "XOPQ" 96, "slnt" 0;
+
+  --options-heading-tall: "wght" 200, "wdth" 75, "opsz" 14, "GRAD" 0, "XTRA" 323,
+    "YOPQ" 135, "YTLC" 475, "YTUC" 712, "YTAS" 800, "YTDE" -150, "YTFI" 650,
+    "XOPQ" 96, "slnt" 0;
+
+  --options-heading-wide: "wght" 700, "wdth" 125, "opsz" 14, "GRAD" 0,
+    "XTRA" 603, "YOPQ" 135, "YTLC" 475, "YTUC" 528, "YTAS" 800, "YTDE" -150,
+    "YTFI" 650, "XOPQ" 96, "slnt" 0;
+
+  /* borders */
+  --px: 1px;
+  --px-2: 2px;
+  --px-3: 3px;
+  --px-4: 4px;
+  --px-5: 5px;
+
+  // padding/ margin
+  --em: 0.25em;
+  --em-half: 0.5em;
+  --em-third: 0.75em;
+  --em-full: 1em;
+  --em-double: 2em;
+  --em-triple: 3em;
+
+  // clamp padding/ margin
+  --spacing: clamp(0.25rem, 1.75%, 0.5rem);
+  --spacing-half: clamp(0.5rem, 2.5%, 1rem);
+  --spacing-third: clamp(0.75rem, 3.75%, 1.5rem);
+  --spacing-full: clamp(1rem, 5%, 2rem);
+  --spacing-double: clamp(2rem, 10%, 6rem);
+  --spacing-triple: clamp(3rem, 15%, 9rem);
+
+  // standard colors
+  --text-clr: hsl(0, 0%, 5%);
+  --text-clr-inverse: hsl(0, 0%, 98%); // for legibility
+  --background-clr: hsl(0, 0%, 95%);
+
+  // grey colors
+  --neutral-clr: hsl(0, 0%, 65%);
+  --neutral-clr-lightest: hsl(0, 0%, 75%);
+  --neutral-darkest: hsl(0, 0%, 50%);
+
+  // dark colors
+  --dark-clr: hsl(0, 0%, 15%);
+  --dark-clr-lightest: hsl(0, 0%, 25%);
+  --dark-clr-darkest: hsl(0, 0%, 5%);
+
+  // light colors
+  --light-clr: hsl(0, 0%, 95%);
+  --light-clr-lightest: hsl(0, 0%, 100%);
+  --light-clr-darkest: hsl(0, 0%, 90%);
+
+  // theme colors
+  --theme-clr: hsl(180, 75%, 50%);
+  --theme-clr-darkest: hsl(180, 50%, 25%);
+  --theme-clr-lightest: hsl(180, 50%, 75%);
+
+  // theme accent colors
+  --accent-clr: hsl(0, 75%, 50%);
+  --accent-clr-darkest: hsl(0, 100%, 25%);
+  --accent-clr-lightest: hsl(0, 100%, 75%);
+
+  // link colors
+  --link-clr: var(--text-clr); // text color
+  --link-clr-after: var(--text-clr); //text color
+  --link-clr-hover: var(--accent-clr); // accent light
+
+  // standard accessible colors
+  --fine-clr: hsl(110, 100%, 30%); // success
+  --hint-clr: hsl(0, 100%, 50%); // error
+  --mark-clr: hsl(45, 100%, 50%); // warning
+}
+
+// 5-10 percent lightness reduction recommended
+@media (prefers-color-scheme: dark) {
+  :root {
+    // standard colors on dark mode
+    --text-clr: white;
+    --text-clr-inverse: black; // when text not visible
+    --background-clr: black;
+
+    // grey colors on dark mode
+    --neutral-clr: hsl(0, 0%, 60%);
+    --neutral-clr-lightest: hsl(0, 0%, 70%);
+    --neutral-darkest: hsl(0, 0%, 45%);
+
+    // dark colors on dark mode
+    --dark-clr: hsl(0, 0%, 10%);
+    --dark-clr-lightest: hsl(0, 0%, 20%);
+    --dark-clr-darkest: hsl(0, 0%, 5%);
+
+    // light colors on dark mode
+    --light-clr: hsl(0, 0%, 90%);
+    --light-clr-lightest: hsl(0, 0%, 95%);
+    --light-clr-darkest: hsl(0, 0%, 85%);
+
+    // theme colors on dark mode
+    --theme-clr: hsl(180, 75%, 45%);
+    --theme-clr-darkest: hsl(180, 50%, 20%);
+    --theme-clr-lightest: hsl(180, 50%, 70%);
+
+    // theme accent colors on dark mode
+    --accent-clr: hsl(0, 75%, 45%);
+    --accent-clr-darkest: hsl(0, 100%, 20%);
+    --accent-clr-lightest: hsl(0, 100%, 70%);
+
+    // link colors
+    --link-clr: var(--text-clr); // text color
+    --link-clr-after: var(--text-clr); //text color
+    --link-clr-hover: var(--accent-clr); // accent light
+
+    // accessible color brightness
+    --fine-clr: hsl(110, 100%, 20%); // success
+    --hint-clr: hsl(0, 100%, 40%); // error
+    --mark-clr: hsl(45, 100%, 40%); // warning
+    // img brightness
+    img {
+      filter: brightness(0.85) contrast(1.15);
+    }
+  }
+}

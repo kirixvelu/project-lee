@@ -1,0 +1,87 @@
+// Smart Layouts
+
+// Full width, centered & padded (apply class to main/ section)
+.grid-half,
+.grid-third,
+.grid-hero {
+  display: grid;
+  place-content: center;
+  margin-inline: auto;
+  width: min(100%, 1280px);
+}
+// half hero box
+.grid-half {
+  min-height: 25vh;
+}
+// third hero box
+.grid-third {
+  min-height: 65vh;
+}
+// full hero box
+.grid-hero {
+  min-height: 45vh;
+  text-align: center;
+}
+
+// multi-grid
+.grid-auto {
+  display: grid;
+  gap: var(--spacing);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20em), 1fr));
+}
+
+// multi-flex
+.flex-auto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+
+  // flex items (li)
+  > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20em;
+  }
+}
+
+// Flexbox
+.flex-side {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--spacing) auto;
+  max-width: 55em;
+  gap: var(--spacing-1);
+  background: var(--theme-dark);
+
+  > *:nth-child(1) {
+    flex: 1 1 35%;
+    display: grid;
+    align-self: center;
+  }
+
+  > *:nth-child(2) {
+    flex: 1 1 55%;
+    min-width: 20em;
+  }
+}
+
+// Fixed sidebar
+.grid-side {
+  display: grid;
+  gap: var(--spacing);
+  max-width: 60em;
+  margin-inline: auto;
+  grid-template-columns: fit-content(35ch) minmax(min(45vw, 45ch), 1fr);
+
+  img {
+    border-bottom: 2px solid var(--theme-clr);
+    border-top-right-radius: 25%;
+    display: grid;
+    align-self: baseline;
+  }
+  article {
+    display: grid;
+    gap: var(--spacing);
+    align-self: end;
+  }
+}

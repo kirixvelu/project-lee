@@ -1,0 +1,18 @@
+---
+layout: page
+title: "Innovating the Web Experience with Performance"
+eleventyNavigation:
+  key: studies
+  order: 3
+pagination:
+  data: collections.blog
+  size: 6
+  alias: articles
+---
+<article>
+
+{% include "./_includes/components/categoryNav.njk" %} 
+<h1>{{ title }}</h1>
+{% include
+"./_includes/components/articleList.njk" %}
+</article>

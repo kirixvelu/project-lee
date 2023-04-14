@@ -1,0 +1,45 @@
+// Performant CSS transitions
+// Grand parent container e.g. (ul)
+
+.transitions > * {
+  // Transition applies to parent container e.g. (li)
+  --transition-property: transform;
+  --transition-duration: 250ms;
+
+  transition: var(--transition-property) var(--transition-duration) ease-in-out;
+}
+
+.rise:hover > * {
+  // Effect applies to direct child e.g. (span)
+  // Require display property for activation e.g (flex/grid/block)
+  transform: translateY(-25%);
+}
+
+.rotate:hover > * {
+  transform: rotate(15deg);
+}
+
+.flip:hover > * {
+  transform-origin: -100% 50%;
+  transform: rotate(45deg);
+}
+
+.zoom:hover > * {
+  transform: scale(1.1);
+}
+
+.fade > * {
+  --transition-property: opacity;
+  --transition-duration: 500ms;
+}
+
+.fade:hover > * {
+  opacity: 0;
+}
+
+// Respect user preference
+@media (prefers-reduced-motion: reduce) {
+  .transitions > * {
+    --transition-duration: 1ms;
+  }
+}
