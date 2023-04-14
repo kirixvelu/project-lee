@@ -18,20 +18,8 @@ for = "/*"
 
 # secure browser
 [[redirects]]
-from = "digitaldesigners.ca"
-to = "www.digitaldesigners.ca"
-status = 301
-force = true
-
-[[redirects]]
-from = "http://digitaldesigners.ca"
-to = "www.digitaldesigners.ca"
-status = 301
-force = true
-
-[[redirects]]
-from = "http://www.digitaldesigners.ca"
-to = "www.digitaldesigners.ca"
+from = "https://.digitaldesigners.netlify.app"
+to = "https://digitaldesigners.ca"
 status = 301
 force = true
 
