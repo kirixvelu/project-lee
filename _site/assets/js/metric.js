@@ -53,7 +53,7 @@ function a() {
       return t.join("&");
     },
     O = !1,
-    C = "https://digitaldesigners.ca/g/collect",
+    C = "https://www.google-analytics.com/g/collect",
     E = _({
       v: "2",
       tid: k,
