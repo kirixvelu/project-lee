@@ -9,7 +9,14 @@
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
 
-    <!-- favicon + generator -->
+     <!-- fonts -->
+    <link rel="preload" as="font" href="assets/fonts/RobotoFlex-Variable.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/RobotoFlex-Regular.woff" type="font/woff" crossorigin="anonymous">
+
+     <!-- favicon + generator -->
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}" />
+    <meta name="generator" content="{{ eleventy.generator }}" />
     <link rel="icon" sizes="48x48" href="{{ '/favicon.ico' | url }}" />
     <link rel="canonical" href="{{ metadata.url + page.url }}" itemprop="url" />
    

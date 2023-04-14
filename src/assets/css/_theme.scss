@@ -3,24 +3,24 @@
 @font-face {
   font-family: "RobotoFlex-Variable";
   src: local("RobotoFlex-Variable"),
-    url("./fonts/RobotoFlex-Variable.woff2") format("woff2-variations"),
-    url("./fonts/RobotoFlex-Variable.woff2") format("woff2");
+    url("fonts/RobotoFlex-Variable.woff2") format("woff2-variations"),
+    url("fonts/RobotoFlex-Variable.woff2") format("woff2");
   // deprecated, required by Safari
   font-style: normal;
   font-weight: 100 1000; /* prevents faux bolding in Safari */
   font-stretch: 25% 150%; /* required by Chrome */
-  font-display: fallback;
+  font-display: swap;
 }
 
 /* regular font */
 @font-face {
   font-family: "RobotoFlex-Regular";
   src: local("RobotoFlex-Regular"),
-    url("./fonts/RobotoFlex-Regular.woff") format("woff");
+    url("fonts/RobotoFlex-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  font-display: fallback; /* method of loading font */
+  font-display: swap; /* method of loading font */
 }
 
 /* fallback font */

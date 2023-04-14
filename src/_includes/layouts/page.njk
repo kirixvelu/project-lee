@@ -9,9 +9,11 @@
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
 
-    <!-- favicon + generator -->
-    <link rel="icon" sizes="48x48" href="{{ '/favicon.ico' | url }}" />
-    <link rel="canonical" href="{{ metadata.url + page.url }}" itemprop="url" />
+     <!-- favicon + generator -->
+     <title>{{ title or metadata.title }}</title>
+     <meta name="description" content="{{ description or metadata.description }}" />
+     <link rel="icon" sizes="48x48" href="{{ '/favicon.ico' | url }}" />
+     <link rel="canonical" href="{{ metadata.url + page.url }}" itemprop="url" />
 
     <!-- metadata -->
     <title>{{ title or metadata.title }}</title>
