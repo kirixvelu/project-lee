@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- start of Head -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <!-- Prefetch-->
+      
+    <!-- favicon + generator -->
+     
+
+    <!-- schema for blog  -->
+    
+
+    <!-- schema for home -->
+    
+
+    <!-- metadata -->
+    <title>Understanding the Core of CSS Features</title>
+     
+
+<meta name="description" content="Innovating the Cloud Space while Embracing Humanity" />
+<meta name="author" content="Kiri Vadivelu" />
+
+<meta property="og:title" content="Eleventy Not So Minimal Blog Starter" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="" />
+<meta property="og:description" content="Innovating the Cloud Space while Embracing Humanity" />
+<meta property="og:image" content="https://digitaldesigners.ca/assets/social-image.jpg" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@kiri_vadivelu" />
+<meta name="twitter:title" content="Eleventy Not So Minimal Blog Starter" />
+<meta name="twitter:description" content="Innovating the Cloud Space while Embracing Humanity" />
+<meta name="twitter:image" content="socialImage" />
+ 
+    <link rel="stylesheet" href="/assets/main.css" />
+
+    <!-- verifications -->
+    <meta name="yandex" content="" />
+    <meta name="google" content="" />
+    <!-- End of Head -->
+  </head>
+
+  <body>
+    
+<header role="banner">
+  <!-- wrapper -->
+  <div class="header">
+    <div class="logo">
+      <span class="text-body-tall">Digital Designers</span>
+    </div>
+    <!-- spaced between -->
+    <nav role="navigation" aria-label="main navigation">
+      <ul>
+        <li class="nav__item">
+          <a href="/">home</a>
+        </li>
+        <li class="nav__item">
+          <a href="/about/">about</a>
+        </li>
+        <li class="nav__item">
+          <a href="/studies/">studies</a>
+        </li></ul>
+    </nav>
+  </div>
+</header>
+
+    <main role="main">
+      <!-- wrapper -->
+      <div class="main">
+        
+<article class="article">
+  <h1>Understanding the Core of CSS Features</h1>
+  <small>
+    Published: <time>August 10, 2022</time>
+    <a class="category" href="/studies/Designs">Designs</a>
+  </small>
+  <p>The basic difference between CSS Grid Layout and CSS Flexbox Layout is that Flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time. The two specifications share some common features, however, and if you have already learned how to use Flexbox, the similarities should help you get to grips with Grid.</p>
+<h2>Content out or layout in?</h2>
+<p>Flexbox works from the content out. An ideal use case for flexbox is when you have a set of items and want to space them out evenly in a container. You let the size of the content decide how much individual space each item takes up. If the items wrap onto a new line, they will work out their spacing based on their size and the available space on that line.</p>
+<p>Grid works from the layout in. When you use CSS Grid Layout you create a layout and then you place items into it, or you allow the auto-placement rules to place the items into the grid cells according to that strict grid. It is possible to create tracks that respond to the size of the content, however, they will also change the entire track.</p>
+<h2>Box alignment</h2>
+<p>The feature of flexbox that was most exciting to many of us was that it gave us proper alignment control for the first time. It made it easy to center a box on the page. Flex items can stretch to the height of the flex container, meaning that equal height columns were possible. These were things we have wanted to do for a very long time, and have come up with all kinds of hacks to accomplish, at least visually.</p>
+<p>The alignment properties from the flexbox specification have been added to a new specification called Box Alignment Level 3. This means that they can be used in other specifications, including Grid Layout. In the future, they may well apply to other layout methods as well.</p>
+<h2>The fr unit and flex-basis</h2>
+<p>We have already seen how the fr unit works to assign a proportion of available space in the grid container to our grid tracks. The fr unit, when combined with the minmax() function can give us very similar behavior to the flex properties in flexbox while still enabling the creation of a layout in two dimensions.</p>
+<h2>Auto-filling grid tracks</h2>
+<p>We can use grid to create a similar effect to flexbox, while still keeping the content arranged in strict rows and columns, by creating our track listing using repeat notation and the auto-fill and auto-fit properties.</p>
+<p>If you are using flexbox and find yourself disabling some of the flexibility, you probably need to use CSS Grid Layout. An example would be if you are setting a percentage width on a flex item to make it line up with other items in a row above. In that case, a grid is likely to be a better choice. Understanding the strength and weaknesses of both layout is essential to produce outstanding results.</p>
+
+</article>
+      </div>
+    </main>
+    <footer role="contentinfo">
+  <!-- wrapper -->
+  <div class="footer">
+    <span>© 2008-2023. All Rights Reserved.</span>
+    <!-- spaced between -->
+    <span>
+      Made in <a href="https://www.toronto.ca/"><strong> Toronto</strong></a>. Project by
+      <strong
+        ><a href="https://digitaldesigners.ca">Digital Designers</a></strong
+      >
+    </span>
+  </div>
+</footer>
+
+  </body>
+</html>
