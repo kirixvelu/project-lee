@@ -16,6 +16,25 @@ for = "/*"
   Content-Security-Policy = "upgrade-insecure-requests"
   Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
 
+# secure browser
+[[redirects]]
+from = "digitaldesigners.ca"
+to = "www.digitaldesigners.ca"
+status = 301
+force = true
+
+[[redirects]]
+from = "http://digitaldesigners.ca"
+to = "www.digitaldesigners.ca"
+status = 301
+force = true
+
+[[redirects]]
+from = "http://www.digitaldesigners.ca"
+to = "www.digitaldesigners.ca"
+status = 301
+force = true
+
 # page routes
 [[redirects]]
 from = "/blog"
