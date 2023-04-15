@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 100 1000; /* prevents faux bolding in Safari */
   font-stretch: 25% 150%; /* required by Chrome */
-  font-display: fallback;
+  font-display: optional;
 }
 
 /* regular font */
