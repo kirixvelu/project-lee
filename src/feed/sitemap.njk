@@ -3,7 +3,6 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <link>{{ metadata.url }}</link>
     {% for page in collections.all %}
     {% set path = page.url | url %}
        {% if page.data.title and not page.data.excludeFromSitemap %}
