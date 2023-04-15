@@ -41,6 +41,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("./src/logo.png");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+
+  eleventyConfig.addPassthroughCopy("./src/yandex_27db36a4cd43970d.html");
+
   /*=================*/
   /*     Layouts     */
   /*=================*/
