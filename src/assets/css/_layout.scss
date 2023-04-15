@@ -13,10 +13,7 @@
 .grid-half {
   min-height: 25vh;
 }
-// third hero box
-.grid-third {
-  min-height: 65vh;
-}
+
 // full hero box
 .grid-hero {
   min-height: 45vh;
@@ -51,7 +48,7 @@
   margin: var(--spacing) auto;
   max-width: 55em;
   gap: var(--spacing-1);
-  background: var(--theme-dark);
+  background: var(--theme-clr-darkest);
 
   > *:nth-child(1) {
     flex: 1 1 35%;

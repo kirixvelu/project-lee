@@ -60,11 +60,10 @@
 
 // randomized card styles
 .card-pro {
-  padding: var(--padding-1);
-  border-radius: var(--radius-1);
+  padding: var(--padding);
+  border-radius: var(--radius);
 
   > img {
-    opacity: var(--opacity-1);
     object-fit: cover;
     object-position: center;
 
@@ -84,7 +83,7 @@
     display: flex;
     flex-direction: column;
     place-items: center;
-    background-color: var(--background-glassy);
+    background-color: var(--neutral-clr);
   }
   // card call to action
   > .suggest {
@@ -93,6 +92,6 @@
     isolation: isolate;
     padding: var(--pad);
     border-bottom-left-radius: 5px;
-    background-color: var(--theme);
+    background-color: var(--theme-clr);
   }
 }

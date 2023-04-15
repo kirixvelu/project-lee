@@ -17,6 +17,7 @@ for = "/*"
   Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
 
 # secure browser
+# http to https - Netlify automatic
 [[redirects]]
 from = "https://.digitaldesigners.netlify.app"
 to = "https://digitaldesigners.ca"
@@ -44,6 +45,18 @@ force = true
 
 [[redirects]]
 from = "/article"
+to = "/studies"
+status = 301
+force = true
+
+[[redirects]]
+from = "/news"
+to = "/studies"
+status = 301
+force = true
+
+[[redirects]]
+from = "/reports"
 to = "/studies"
 status = 301
 force = true

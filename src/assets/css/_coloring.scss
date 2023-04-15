@@ -11,31 +11,35 @@
 .theme {
   background-image: linear-gradient(
     45deg,
-    var(--theme-dark),
-    var(--theme-light)
+    var(--theme-clr-darkest),
+    var(--theme-clr-lightest-clr)
   );
 }
 .accent {
   background-image: linear-gradient(
     45deg,
-    var(--accent-dark),
-    var(--accent-light)
+    var(--accent-clr-darkest),
+    var(--accent-clr-lightest)
   );
 }
 .black {
   background-image: linear-gradient(
     45deg,
-    var(--black-dark),
-    var(--black-light)
+    var(--dark-clr-darkest),
+    var(--dark-clr-lightest)
   );
 }
 .white {
   background-image: linear-gradient(
     45deg,
-    var(--white-dark),
-    var(--white-light)
+    var(--light-clr-darkest),
+    var(--light-clr-lightest)
   );
 }
 .grey {
-  background-image: linear-gradient(45deg, var(--grey-dark), var(--grey-light));
+  background-image: linear-gradient(
+    45deg,
+    var(--neutral-clr-darkest),
+    var(--neutral-clr-lightest)
+  );
 }

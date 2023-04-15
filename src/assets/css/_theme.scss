@@ -10,19 +10,6 @@
   font-display: fallback;
 }
 
-/* regular font */
-// @font-face {
-//   font-family: "RobotoFlex-Regular";
-//   src: url("fonts/RobotoFlex-Regular.woff") format("woff");
-//   font-style: normal;
-//   font-weight: 400;
-//   font-stretch: 100%;
-//   font-display: swap; /* method of loading font */
-// }
-
-/* fallback font */
-// system-ui
-
 // Theme
 :root {
   // font family (flex, system, sans-serif)
@@ -104,6 +91,14 @@
   --em-full: 1em;
   --em-double: 2em;
   --em-triple: 3em;
+
+  // radius
+  --radius: 0.25rem;
+  --radius-half: 0.5rem;
+  --radius-third: 0.75rem;
+  --radius-full: 1rem;
+  --radius-double: 2rem;
+  --radius-triple: 3rem;
 
   // clamp padding/ margin
   --spacing: clamp(0.25rem, 1.75%, 0.5rem);
