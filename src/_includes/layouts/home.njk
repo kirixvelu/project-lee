@@ -11,9 +11,9 @@
     <!-- fetch -->
     <link rel="dns-prefetch" href="{{ metadata.url | url }}" />
     <link rel="preload" href="{{ '/assets/fonts/RobotoFlex.woff2' | url }}" as="font" crossorigin />
-    {# <link rel="preload" href="{{ '/assets/main.css' | url }}" as="style" /> #}
 
-    <link rel="preload" href="{{ '/assets/main.css' | url }}" as="style" onload="this.rel='stylesheet'">
+    {# <link rel="preload" href="{{ '/assets/main.css' | url }}" as="style" /> #}
+    {# <link rel="preload" href="{{ '/assets/main.css' | url }}" as="style" onload="this.rel='stylesheet'"> #}
 
      <!-- generators -->
     <title>{{ title or metadata.title }}</title>
@@ -103,7 +103,7 @@
 
   
     <!-- styles -->
-    {# <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" /> #}
+    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
 
     <!-- analytics -->
     <script>
