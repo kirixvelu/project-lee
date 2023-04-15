@@ -9,6 +9,10 @@
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
 
+     <!-- fetch -->
+     <link rel="dns-prefetch" href="{{ metadata.url | url }}" />
+     <link rel="preload" href="{{ '/assets/fonts/RobotoFlex.woff2' | url }}" as="font" crossorigin />
+
      <!-- generators -->
      <title>{{ title or metadata.title }}</title>
      <meta name="description" content="{{ description or metadata.description }}" />
@@ -29,15 +33,11 @@
       title="{{ metadata.title }}"
     />
 
-    <!-- fonts -->
-    <link rel="preload" href="{{ '/assets/fonts/RobotoFlex.woff2' | url }}" as="font" crossorigin />
-
     <!-- metadata -->
     <title>{{ title or metadata.title }}</title>
     {% include "../components/metadata.njk" %} 
     
     <!-- styles -->
-    <link rel="preload" href="{{ '/assets/main.css' | url }}" as="style" />
     <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
 
     <!-- sprites -->
