@@ -1,37 +1,33 @@
 // Variables (Fonts, Options, Colors, Sizing & Spacing)
 // variant font
 @font-face {
-  font-family: "RobotoFlex-Variable";
-  src: local("RobotoFlex-Variable"),
-    url("fonts/RobotoFlex-Variable.woff2") format("woff2");
+  font-family: "Roboto Flex";
+  src: url("fonts/RobotoFlex.woff2") format("woff2");
   // deprecated, required by Safari
   font-style: normal;
   font-weight: 100 1000; /* prevents faux bolding in Safari */
   font-stretch: 25% 150%; /* required by Chrome */
-  font-display: swap;
+  font-display: fallback;
 }
 
 /* regular font */
-@font-face {
-  font-family: "RobotoFlex-Regular";
-  src: local("RobotoFlex-Regular"),
-    url("fonts/RobotoFlex-Regular.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  font-display: swap; /* method of loading font */
-}
+// @font-face {
+//   font-family: "RobotoFlex-Regular";
+//   src: url("fonts/RobotoFlex-Regular.woff") format("woff");
+//   font-style: normal;
+//   font-weight: 400;
+//   font-stretch: 100%;
+//   font-display: swap; /* method of loading font */
+// }
 
 /* fallback font */
 // system-ui
 
 // Theme
 :root {
-  // font family (variant, regular, system)
-  --font-body: "RobotoFlex-Variable", "RobotoFlex-Regular", system-ui,
-    sans-serif;
-  --font-heading: "RobotoFlex-Variable", "RobotoFlex-Regular", system-ui, serif;
-  --font-base: system-ui, sans-serif; //fallback
+  // font family (flex, system, sans-serif)
+  --font-body: "Roboto Flex", system-ui, sans-serif;
+  --font-heading: "Roboto Flex", system-ui, serif;
 
   // font size (320-1280 @1.333, -1 to 9)
   // small
