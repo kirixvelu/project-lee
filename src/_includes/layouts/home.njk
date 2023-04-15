@@ -8,6 +8,13 @@
       name="robots"
       content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
     />
+    <!-- fetch -->
+    <link rel="dns-prefetch" href="{{ metadata.url | url }}" />
+    <link rel="preload" href="{{ '/assets/fonts/RobotoFlex.woff2' | url }}" as="font" crossorigin />
+    {# <link rel="preload" href="{{ '/assets/main.css' | url }}" as="style" /> #}
+
+    <link rel="preload" href="{{ '/assets/main.css' | url }}" as="style" onload="this.rel='stylesheet'">
+
      <!-- generators -->
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}" />
@@ -29,9 +36,6 @@
       title="{{ metadata.title }}"
     />
 
-    <!-- fonts -->
-    <link rel="preload" href="{{ '/assets/fonts/RobotoFlex.woff2' | url }}" as="font" crossorigin />
-   
     <!-- schema for home -->
     <script type="application/ld+json">
       {
@@ -96,15 +100,10 @@
     <!-- metadata -->
     <title>{{ title or metadata.title }}</title>
     {% include "../components/metadata.njk" %} 
-    
+
+  
     <!-- styles -->
-    <link rel="preload" href="{{ '/assets/main.css' | url }}" as="style" />
-    <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" />
-
-    <!-- sprites -->
-
-     <!-- verify -->
-     <meta name="yandex-verification" content="27db36a4cd43970d" />
+    {# <link rel="stylesheet" href="{{ '/assets/main.css' | url }}" /> #}
 
     <!-- analytics -->
     <script>
