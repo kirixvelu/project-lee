@@ -10,7 +10,7 @@ permalink: /sitemap.xml
     {% set path = page.url | url %}
        {% if page.data.title and not page.data.excludeFromSitemap %}
         <url>
-            <loc>{{ site.url }}{{ path }}</loc>
+            <loc>{{ metadata.url }}{{ path }}</loc>
             <lastmod>{{ page.date.toISOString() }}</lastmod>
             <changefreq>{{ page.data.changeFreq if page.data.changeFreq else "monthly" }}</changefreq>
         </url>
