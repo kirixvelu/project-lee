@@ -1,11 +1,10 @@
 ---
-permalink: /feed.xml
+permalink: "/feed.xml"
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.summary }}</subtitle>
+  <subtitle>{{ metadata.description }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self" />
   <link href="{{ metadata.url }}" />
   <updated>{{
@@ -13,10 +12,11 @@ permalink: /feed.xml
   }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
-    <name>Kiri Vadivelu</name>
+    <name>{{ metadata.publisher.name }}</name>
   </author>
 
   {%- for article in collections.blog -%} {% set absolutePostUrl %}{{ article.url | url | absoluteUrl(metadata.url)
+
   }}{% endset %}
   <entry>
     <title>{{ article.data.title }}</title>

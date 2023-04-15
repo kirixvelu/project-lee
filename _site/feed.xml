@@ -1,14 +1,13 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Digital Designers - Web Technology</title>
-  <subtitle></subtitle>
+  <subtitle>Innovating the Cloud Space while Embracing Humanity</subtitle>
   <link href="https://digitaldesigners.ca/feed.xml" rel="self" />
   <link href="https://digitaldesigners.ca" />
   <updated>2023-03-25T00:00:00Z</updated>
   <id>https://digitaldesigners.ca</id>
   <author>
-    <name>Kiri Vadivelu</name>
+    <name></name>
   </author>
   <entry>
     <title>Preparing for the Future of Core Web Technology</title>
