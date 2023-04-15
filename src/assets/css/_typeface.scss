@@ -16,7 +16,6 @@ body {
   font-optical-sizing: auto; // variable fonts default
   text-rendering: optimizeSpeed;
   font-variation-settings: var(--options-body); // settings theme.scss
-  transition: font-variation-settings 250ms;
 }
 
 // Titles
