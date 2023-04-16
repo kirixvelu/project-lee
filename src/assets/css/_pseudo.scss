@@ -1,13 +1,31 @@
 // Pseudo Elements
 // li markers
-.check-mark {
+.li-check {
   li {
-    margin-left: 1rem;
-    padding-left: 0.5rem;
+    list-style-type: "\2714  ";
+    list-style-position: inside;
   }
   li::marker {
-    content: "\2714 ";
-    font-size: 1.2em;
+    color: var(--theme-clr);
+  }
+}
+
+.li-circle {
+  li {
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+  li::marker {
+    color: var(--theme-clr);
+  }
+}
+
+.li-square {
+  li {
+    list-style-type: square;
+    list-style-position: inside;
+  }
+  li::marker {
     color: var(--theme-clr);
   }
 }
