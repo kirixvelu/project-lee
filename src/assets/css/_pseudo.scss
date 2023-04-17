@@ -1,32 +1,28 @@
 // Pseudo Elements
 // li markers
-.li-check {
-  li {
+.li {
+  list-style-position: inside;
+  &::marker {
+    color: var(--theme-clr);
+  }
+  &__check {
     list-style-type: "\2714  ";
-    list-style-position: inside;
   }
-  li::marker {
-    color: var(--theme-clr);
-  }
-}
-
-.li-circle {
-  li {
+  &__circle {
     list-style-type: circle;
-    list-style-position: inside;
   }
-  li::marker {
-    color: var(--theme-clr);
+  &__circle {
+    list-style-type: square;
   }
 }
 
-.li-square {
-  li {
-    list-style-type: square;
-    list-style-position: inside;
-  }
-  li::marker {
+.ol {
+  list-style-position: inside;
+  &::marker {
     color: var(--theme-clr);
+    &__roman {
+      list-style-type: lower-roman;
+    }
   }
 }
 

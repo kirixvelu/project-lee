@@ -11,12 +11,11 @@
 }
 // half hero box
 .grid-half {
-  min-height: 25vh;
+  padding-block: var(--spacing-double);
 }
 
 // full hero box
 .grid-hero {
-  // min-height: 75vh;
   padding-block: var(--spacing-hero);
   text-align: center;
 }

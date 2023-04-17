@@ -32,11 +32,16 @@ main,
 section {
   display: flex;
   flex: 0 1 100%;
-  padding-bottom: 2rem;
   padding-inline: 1rem;
+  margin-block: var(--spacing-full);
   flex-direction: column;
   justify-content: center;
   position: relative; // required for visual elements
+}
+
+section + *,
+article + * {
+  margin-top: 0; //
 }
 
 // internal wrappers

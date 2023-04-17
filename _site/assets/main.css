@@ -570,11 +570,16 @@ main,
 section {
   display: flex;
   flex: 0 1 100%;
-  padding-bottom: 2rem;
   padding-inline: 1rem;
+  margin-block: var(--spacing-full);
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+
+section + *,
+article + * {
+  margin-top: 0;
 }
 
 .main,
@@ -784,7 +789,7 @@ dd {
 }
 
 .grid-half {
-  min-height: 25vh;
+  padding-block: var(--spacing-double);
 }
 
 .grid-hero {
@@ -948,28 +953,30 @@ button.accent:hover, button.accent:focus-visible,
   margin-block: var(--spacing);
 }
 
-.li-check li {
+.li {
+  list-style-position: inside;
+}
+.li::marker {
+  color: var(--theme-clr);
+}
+.li__check {
   list-style-type: "✔ ";
-  list-style-position: inside;
 }
-.li-check li::marker {
-  color: var(--theme-clr);
-}
-
-.li-circle li {
+.li__circle {
   list-style-type: circle;
-  list-style-position: inside;
 }
-.li-circle li::marker {
-  color: var(--theme-clr);
+.li__circle {
+  list-style-type: square;
 }
 
-.li-square li {
-  list-style-type: square;
+.ol {
   list-style-position: inside;
 }
-.li-square li::marker {
+.ol::marker {
   color: var(--theme-clr);
+}
+.ol::marker__roman {
+  list-style-type: lower-roman;
 }
 
 .about-page h2:before {
@@ -1130,7 +1137,6 @@ article small {
 article {
   max-width: 75ch;
   margin-inline: auto;
-  margin-block: var(--spacing-full);
 }
 
 p {
