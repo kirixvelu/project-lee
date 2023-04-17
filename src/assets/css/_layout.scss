@@ -16,7 +16,8 @@
 
 // full hero box
 .grid-hero {
-  min-height: 45vh;
+  // min-height: 75vh;
+  padding-block: var(--spacing-hero);
   text-align: center;
 }
 
