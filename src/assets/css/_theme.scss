@@ -77,28 +77,13 @@
     "XTRA" 603, "YOPQ" 135, "YTLC" 475, "YTUC" 528, "YTAS" 800, "YTDE" -150,
     "YTFI" 650, "XOPQ" 96, "slnt" 0;
 
-  /* borders */
-  --px: 1px;
-  --px-2: 2px;
-  --px-3: 3px;
-  --px-4: 4px;
-  --px-5: 5px;
-
   // padding/ margin
-  --em: 0.25em;
-  --em-half: 0.5em;
-  --em-third: 0.75em;
-  --em-full: 1em;
-  --em-double: 2em;
-  --em-triple: 3em;
-
-  // radius
-  --radius: 0.25rem;
-  --radius-half: 0.5rem;
-  --radius-third: 0.75rem;
-  --radius-full: 1rem;
-  --radius-double: 2rem;
-  --radius-triple: 3rem;
+  --padding: 0.25em;
+  --padding-half: 0.5em;
+  --padding-third: 0.75em;
+  --padding-full: 1em;
+  --padding-double: 2em;
+  --padding-triple: 3em;
 
   // clamp padding/ margin
   --spacing: clamp(0.25rem, 1.75%, 0.5rem);
@@ -107,7 +92,6 @@
   --spacing-full: clamp(1rem, 5%, 2rem);
   --spacing-double: clamp(2rem, 10%, 6rem);
   --spacing-triple: clamp(3rem, 15%, 9rem);
-  --spacing-hero: clamp(5rem, 25%, 15rem);
 
   // standard colors
   --text-clr: hsl(0, 0%, 5%);
