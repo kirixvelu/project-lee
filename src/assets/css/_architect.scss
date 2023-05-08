@@ -84,7 +84,7 @@ article {
     text-decoration: none;
     margin-left: 1rem;
     line-height: 1;
-    padding-inline: var(--em);
+    padding-inline: 0.25em;
     border-inline: 0.125em solid;
 
     &:hover {
@@ -100,7 +100,7 @@ article {
 
   small {
     display: inline-block;
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
   }
 }
 

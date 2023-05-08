@@ -77,14 +77,6 @@
     "XTRA" 603, "YOPQ" 135, "YTLC" 475, "YTUC" 528, "YTAS" 800, "YTDE" -150,
     "YTFI" 650, "XOPQ" 96, "slnt" 0;
 
-  // padding/ margin
-  --padding: 0.25em;
-  --padding-half: 0.5em;
-  --padding-third: 0.75em;
-  --padding-full: 1em;
-  --padding-double: 2em;
-  --padding-triple: 3em;
-
   // clamp padding/ margin
   --spacing: clamp(0.25rem, 1.75%, 0.5rem);
   --spacing-half: clamp(0.5rem, 2.5%, 1rem);
