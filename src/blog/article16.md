@@ -31,7 +31,7 @@ The great King Pandara Vanniyan in 17th century prior to european colonization. 
 
 ## Alright, where do I start?
 
-To get started, simply fork or download the assets into your favorite code editor and then start making changes as you for your project requirement. Please note that all files are SCSS format; which are to be automatically converted to CSS during production build. It can also be converted manually using any preferred method. Link to the repository, Git Repo.
+To get started, simply fork or download the assets into your favorite code editor and then start making changes as you for your project requirement. Please note that all files are SCSS format; which are to be automatically converted to CSS during production build. It can also be converted manually using any preferred method. Link to the repository, [Git Repo](https://github.com/kiri-vadivelu/jaffna-css).
 
 ## How do I provide feedback?
 
