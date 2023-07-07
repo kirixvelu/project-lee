@@ -1,6 +1,7 @@
 ---
 title: Terms & Conditions
 date: 2023-01-05
+permalink: "/terms/"
 ---
 
 Last updated: January 05, 2023

@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy
 date: 2023-01-05
+permalink: "/privacy/"
 ---
 
 Last updated: January 05, 2023

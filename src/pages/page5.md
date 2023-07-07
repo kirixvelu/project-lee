@@ -1,6 +1,7 @@
 ---
 title: Land Acknowledgement
 date: 2023-01-05
+permalink: "/land-acknowledgement/"
 ---
 
 Last updated: January 05, 2023

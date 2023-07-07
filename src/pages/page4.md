@@ -1,6 +1,7 @@
 ---
 title: Frequently Asked Questions (FAQ)
 date: 2023-01-05
+permalink: "/frequently-asked-questions/"
 ---
 
 ## WHAT IS A PORTFOLIO WEBSITE?

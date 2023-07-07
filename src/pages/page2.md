@@ -1,6 +1,7 @@
 ---
 title: Cookies Policy
 date: 2023-01-05
+permalink: "/cookies/"
 ---
 
 Last updated: January 05, 2023

@@ -38,25 +38,7 @@ status = 301
 force = true
 
 [[redirects]]
-from = "/publish"
-to = "/studies"
-status = 301
-force = true
-
-[[redirects]]
 from = "/article"
-to = "/studies"
-status = 301
-force = true
-
-[[redirects]]
-from = "/news"
-to = "/studies"
-status = 301
-force = true
-
-[[redirects]]
-from = "/reports"
 to = "/studies"
 status = 301
 force = true
