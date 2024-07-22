@@ -157,27 +157,6 @@
     
        
         <url>
-            <loc>https://digitaldesigners.ca/studies/applications/</loc>
-            <lastmod>2023-03-03T20:36:24.000Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-    
-       
-    
-    
-       
-        <url>
-            <loc>https://digitaldesigners.ca/studies/</loc>
-            <lastmod>2023-03-03T20:36:24.000Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-    
-       
-        <url>
             <loc>https://digitaldesigners.ca/studies/embracing-the-jamstack-technology-at-netlify/</loc>
             <lastmod>2023-03-05T00:00:00.000Z</lastmod>
             <changefreq>monthly</changefreq>
@@ -215,7 +194,28 @@
        
         <url>
             <loc>https://digitaldesigners.ca/about/</loc>
-            <lastmod>2023-04-13T21:32:36.954Z</lastmod>
+            <lastmod>2024-07-22T03:21:35.056Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+        
+    
+    
+       
+        <url>
+            <loc>https://digitaldesigners.ca/studies/applications/</loc>
+            <lastmod>2024-07-22T03:21:35.072Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+        
+    
+    
+       
+    
+    
+       
+        <url>
+            <loc>https://digitaldesigners.ca/studies/</loc>
+            <lastmod>2024-07-22T03:21:35.078Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
